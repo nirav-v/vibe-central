@@ -1,0 +1,155 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light-color: #d2d5fc;
+  --dark-burgundy: rgb(116, 28, 28);
+  --dark-grey: rgb(53, 45, 45);
+  --tan-color: rgb(207, 135, 41);
+  --box-shadow-color: rgb(145, 58, 148);
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  background-color: var(--light-color);
+}
+
+header h1 {
+  background-color: var(--tan-color);
+  color: var(--dark-burgundy);
+  text-align: center;
+}
+
+.subtitle {
+  color: rgb(4, 38, 112);
+  position: relative;
+  top: 450px;
+  left: 100px;
+  font-weight: bolder;
+  width: 75%;
+  text-align: center;
+  font-size: 200%;
+  font-style: oblique;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-bar {
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-bar li {
+  display: block;
+  color: var(--light-color);
+}
+
+.nav-bar li a {
+  color: inherit;
+}
+
+.background-image {
+  /* temporary free background image from pexels: https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?cs=srgb&dl=pexels-craig-adderley-1563356.jpg&fm=jpg*/
+  background-image: url("https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+/* Project figures Preview Display */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.projects-column {
+  padding: 10px;
+  flex-grow: 0;
+}
+
+.project-header {
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  color: var(--light-color);
+  position: relative;
+  top: 200px;
+  max-width: 30%;
+}
+
+.project-figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-figure img {
+  width: 100%;
+  border-radius: 15px;
+  height: 400px;
+}
+
+.projects-column img:hover,
+.project-header:hover {
+  box-shadow: inset 0px 0px 8px rgb(145, 58, 148), 0 0 10px rgb(148, 76, 167);
+  width: 105%;
+  border: 5px;
+}
+
+.project-figure .language {
+  font-weight: lighter;
+}
+
+#contact-info {
+  text-align: center;
+}
+
+/* fit to mobile screens */
+@media screen and (min-width: 768px) {
+  .nav-bar li {
+    flex: 0 0 100%;
+    display: block;
+  }
+}
+
+/* fit desktop width */
+@media screen and (min-width: 960px) {
+  header h1 {
+    text-align: left;
+  }
+
+  .nav-bar li {
+    display: inline;
+  }
+
+  #contact-info li {
+    display: inline;
+  }
+
+  .projects-column {
+    display: inline;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .projects-column:last-child {
+    min-width: 100%;
+  }
+}
