@@ -1,6 +1,6 @@
 # vibe-central
 
-#This will serve as a landing page to showcase the projects I make along my web evelopment journey.
+#This will serve as a landing page to showcase the projects I make along my web development journey.
 
 link to webpage:  https://nirav-v.github.io/vibe-central/
 
