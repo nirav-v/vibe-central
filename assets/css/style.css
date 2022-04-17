@@ -88,10 +88,11 @@ main {
 .project-header {
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
-  color: var(--light-color);
+  color: var(--dark-burgundy);
   position: relative;
-  top: 200px;
-  max-width: 30%;
+  top: 15%;
+  left: 20px;
+  max-width: 100%;
 }
 
 .project-figure {
@@ -109,12 +110,19 @@ main {
 .projects-column img:hover,
 .project-header:hover {
   box-shadow: inset 0px 0px 8px rgb(145, 58, 148), 0 0 10px rgb(148, 76, 167);
-  width: 105%;
+  width: 100%;
   border: 5px;
 }
 
-.project-figure .language {
-  font-weight: lighter;
+.deployed-link {
+  position: relative;
+  top: 20%;
+}
+
+.github-repo-link {
+  position: relative;
+  top: 20%;
+  max-width: 100%;
 }
 
 #contact-info {
