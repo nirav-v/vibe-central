@@ -12,6 +12,7 @@
   --dark-grey: rgb(53, 45, 45);
   --tan-color: rgb(207, 135, 41);
   --box-shadow-color: rgb(145, 58, 148);
+  --link-color: rgb(117, 56, 129);
 }
 
 body {
@@ -85,13 +86,17 @@ main {
   flex-grow: 0;
 }
 
+figure {
+  height: 50vh;
+}
+
 .project-header {
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
   color: var(--dark-burgundy);
   position: relative;
-  top: 15%;
   left: 20px;
+  top: 100px;
   max-width: 100%;
 }
 
@@ -107,6 +112,11 @@ main {
   height: 400px;
 }
 
+.projects-column {
+  height: 600px;
+  width: 720px;
+}
+
 .projects-column img:hover,
 .project-header:hover {
   box-shadow: inset 0px 0px 8px rgb(145, 58, 148), 0 0 10px rgb(148, 76, 167);
@@ -116,13 +126,20 @@ main {
 
 .deployed-link {
   position: relative;
-  top: 20%;
+  top: 115px;
+  left: 30px;
+  color: var(--link-color);
+}
+#secure-rando-deployed-link {
+  position: relative;
+  top: 135px;
 }
 
 .github-repo-link {
   position: relative;
-  top: 20%;
-  max-width: 100%;
+  top: 120px;
+  left: 30px;
+  color: var(--link-color);
 }
 
 #contact-info {
